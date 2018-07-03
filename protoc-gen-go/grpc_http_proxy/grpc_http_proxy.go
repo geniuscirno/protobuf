@@ -157,7 +157,7 @@ func (g *proxy) GenerateImports(file *generator.FileDescriptor) {
 	}
 
 	g.P("import (")
-	g.P(servePkg, " ", strconv.Quote("common/network/grpc_http_proxy"))
+	g.P(servePkg, " ", strconv.Quote("github.com/geniuscirno/protobuf-rpc/grpc_http_proxy"))
 	g.P(")")
 	g.P()
 }
