@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package network.api;
+
+import "google/protobuf/descriptor.proto";
+
+message Http {
+    repeated HttpRule rules = 1;
+}
+
+message HttpRule {
+    //string selector = 1;
+    oneof pattern {
+       string get = 2;
+       string put = 3;
+       string post = 4;
+       string delete = 5;
+       string patch = 6;
+    }
+  //string action = 7;
+    string auth = 8;
+}
+
+extend google.protobuf.MethodOptions {
+    HttpRule http =  72295728;
+}
