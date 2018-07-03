@@ -14,7 +14,7 @@ const generatedCodeVersion = 1
 
 const (
 	contextPkgPath = "context"
-	msgPkgPath     = "github.com/geniuscirnp/protobuf-rpc/message"
+	msgPkgPath     = "github.com/geniuscirno/protobuf-rpc/message"
 )
 
 func init() {
