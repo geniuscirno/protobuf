@@ -7,6 +7,7 @@ import (
 	"github.com/golang/protobuf/proto"
 	pb "github.com/golang/protobuf/protoc-gen-go/descriptor"
 	"github.com/golang/protobuf/protoc-gen-go/generator"
+	network_api "github.com/golang/protobuf/ptypes/network"
 )
 
 // This plugin MUST enable with grpc plugin
