@@ -4,8 +4,6 @@ import (
 	"fmt"
 	"strconv"
 
-	"proto/network/api"
-
 	"github.com/golang/protobuf/proto"
 	pb "github.com/golang/protobuf/protoc-gen-go/descriptor"
 	"github.com/golang/protobuf/protoc-gen-go/generator"
@@ -30,7 +28,7 @@ var (
 func (g *proxy) Init(gen *generator.Generator) {
 	g.gen = gen
 	contextPkg = "context"
-	servePkg = generator.RegisterUniquePackageName("common/network/grpc_http_proxy", nil)
+	servePkg = generator.RegisterUniquePackageName("github.com/geniuscirno/protobuf-rpc/grpc_http_proxy", nil)
 }
 
 func (g *proxy) Name() string {
